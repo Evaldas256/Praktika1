@@ -1,0 +1,506 @@
+:root {
+    --primary: #ff6a3e;
+    --primary-light: #ffba43;
+    --secondary: #ffba43;
+    --secondary-light: #ffba43;
+    --header-color: #1a1a1a;
+    --body-text-color: #4e4b66;
+    --body-text-color-white: #fafbfc;
+    --header-font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --body-font-size: 1rem;
+    --section-padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+
+}
+
+h1 {
+    font-size: 25px;
+
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--primary);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+.flex-container {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    /* Adjust the gap between items */
+
+}
+
+.antraste {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.tikrasis_tekstas {
+    font-size: var(--body-font-size);
+    line-height: 1.5em;
+    max-width: 40.625rem;
+    margin: 0 0 1rem 0;
+    color: var(--body-text-color);
+
+}
+
+.p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.pavadinimas_tekstas {
+    text-align: center;
+    width: 100%;
+    margin-bottom: clamp(2.5rem, 5vw, 3.25rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.flex-item {
+
+
+    /* text-align: left; */
+
+    flex: 0 1 calc(50% - 20px);
+    /* Each item takes 50% of the row */
+    box-sizing: border-box;
+    text-align: center;
+    /* Optional: Center content inside each item */
+
+}
+
+
+.container {
+
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.apacios_tekstas {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    color: var(--body-text-color);
+
+}
+
+.meniuske {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.text_header {
+    font-size: var(--header-font-size);
+    font-weight: 900;
+    line-height: 1.2em;
+    color: var(--header-color);
+    /* max-width: 43.75rem; */
+    width: 100%;
+    margin: 0 0 1rem 0;
+    /* width: 50%; */
+    box-sizing: border-box;
+
+}
+
+
+
+
+.paveikslas {
+    margin-right: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.apacia {
+    background-color: #F7F7F7;
+    padding: clamp(1.5rem, 3vw, 2rem);
+    border-radius: 15px;
+    text-align: left;
+    align-items: flex-start;
+    grid-column: span 6;
+}
+
+.nuotrauka {
+    width: 100%;
+    height: clamp(17.5rem, 58.6vw, 31.875rem);
+    margin-bottom: clamp(1rem, 2vw, 1.25rem);
+    display: block;
+    position: relative;
+}
+
+.nuotrauka img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2.5rem;
+    position: absolute;
+
+}
+
+.mygtukas_flex {
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.mygtukas {
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.mygtukas a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.mygtukas:hover {
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+}
+
+.mygtukas:hover a {
+    color: background-color;
+    text-decoration: none;
+}
+
+.tekstas {
+    flex: none;
+}
+
+.tekstas2 {
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 48px;
+    padding-top: 16px;
+    padding-right: 48px;
+    padding-bottom: 16px;
+}
+
+.mygtukas2 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    padding: 0 clamp(2rem, 4vw, 3rem);
+    background-color: var(--primary);
+    color: var(--body-text-color-white);
+    display: inline-block;
+    transition: color 0.3s, background-color 0.3s;
+
+}
+
+
+.mygtukas2:hover {
+    background-color: black;
+    text-decoration: none;
+}
+
+
+.logotipas {
+    display: flex;
+    align-items: center;
+}
+
+#turinys {
+    padding: var(--section-padding);
+    overflow: hidden;
+    position: relative;
+}
+
+.burger .line {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+}
+
+@media (min-width: 1300px) {
+    .flex-item {
+        flex: 0 1 calc(25% - 20px);
+        /* For smaller screens, show two items per row */
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        /* Prevents items from wrapping to the next line */
+        justify-content: space-between;
+        /* Optional: Add space between the items */
+        gap: 20px;
+        /* Optional: Add some gap between items */
+        overflow-x: auto;
+        /* Adds horizontal scroll if items don't fit in the row */
+    }
+
+    .pavadinimas_tekstas {
+        text-align: left;
+        max-width: 80rem;
+        gap: 1.25rem;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+
+    .tekstas {
+
+        width: 50%;
+        max-width: 39.375rem;
+
+    }
+
+    .antraste {
+        padding: 40px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .antraste {
+        padding: 20px;
+
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .mygtukas {
+        display: none;
+    }
+
+    .meniuske {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        z-index: 1000;
+        padding: 1rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .tikrasis_tekstas {
+        font-size: 1.25rem;
+    }
+
+    .flex-item {
+        flex: 0 1 calc(75% - 20px);
+        /* For smaller screens, show two items per row */
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        /* Prevents items from wrapping to the next line */
+        justify-content: space-between;
+        /* Optional: Add space between the items */
+        gap: 20px;
+        /* Optional: Add some gap between items */
+        overflow-x: auto;
+        /* Adds horizontal scroll if items don't fit in the row */
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: stretch;
+        /* Stretch each item to fill the container's width */
+        gap: 20px;
+        /* Optional: Add space between the items */
+    }
+
+    .flex-item {
+        display: flex;
+        justify-content: center;
+        /* Horizontally center the content */
+        align-items: center;
+        /* Vertically center the content */
+        width: 100%;
+        /* Ensure each item takes up the full width of the container */
+        height: 200px;
+        /* Set a height for the item to center the content vertically */
+        box-sizing: border-box;
+        /* Ensure padding and borders are included in the width/height */
+        background-color: #f0f0f0;
+        /* Optional: Background for visibility */
+        padding: 20px;
+        /* Optional: Add padding inside the items */
+        flex-direction: column;
+    }
+
+    .apacios_tekstas {
+        text-align: center;
+
+    }
+
+}
+
+.vienas:hover {
+    .pirmas {
+        color: #ffba43;
+    }
+}
+
+.du:hover {
+    .antras {
+        color: #ffba43;
+    }
+}
+
+.trys:hover {
+    .trecias {
+        color: #ffba43;
+    }
+}
+
+.keturi:hover {
+    .ketvirtas {
+        color: #ffba43;
+    }
+}
+
+
+
+/*modal*/
+
+
+/* Basic page styles */
+
+  
+/* Basic page styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .open-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Modal styles */
+  .modal {
+    visibility: hidden; /* Hidden by default */
+    opacity: 0; /* Transparent by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    transition: visibility 0s, opacity 0.3s ease; /* Transition opacity */
+  }
+  
+  /* When modal is triggered (targeted) */
+  #modal:target {
+    visibility: visible; /* Make modal visible */
+    opacity: 1;    /* Fade in */
+  }
+  
+  /* Modal content styles */
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    max-width: 500px; /* Limit the maximum width for better responsiveness */
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(0.7); /* Start small */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 1s ease; /* Transition both */
+  }
+  
+  /* Expanding and fading in when modal is targeted */
+  #modal:target .modal-content {
+    transform: scale(1); /* Full size when modal is open */
+    opacity: 1; /* Fade in content */
+  }
+  
+  /* Close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  
