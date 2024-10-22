@@ -1,16 +1,3 @@
-:root {
-    --primary: #ff6a3e;
-    --primary-light: #ffba43;
-    --secondary: #ffba43;
-    --secondary-light: #ffba43;
-    --header-color: #1a1a1a;
-    --body-text-color: #4e4b66;
-    --body-text-color-white: #fafbfc;
-    --header-font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
-    --body-font-size: 1rem;
-    --section-padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-}
-
 body {
 
     margin: 0;
@@ -29,7 +16,7 @@ h1 {
     cursor: pointer;
     flex-direction: column;
     gap: 5px;
-    background-color: var(--primary);
+    background-color: #ff6a3e;
     padding: 12px;
     border-radius: 8px;
 }
@@ -41,16 +28,12 @@ h1 {
 
 
 .flex-container {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px; */
+   
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    /* Adjust the gap between items */
-
+    
 }
 
 .antraste {
@@ -66,11 +49,11 @@ h1 {
 }
 
 .tikrasis_tekstas {
-    font-size: var(--body-font-size);
+    font-size: 1rem;
     line-height: 1.5em;
     max-width: 40.625rem;
     margin: 0 0 1rem 0;
-    color: var(--body-text-color);
+    color: #4e4b66;
 
 }
 
@@ -99,11 +82,10 @@ h1 {
     /* text-align: left; */
 
     flex: 0 1 calc(50% - 20px);
-    /* Each item takes 50% of the row */
+    
     box-sizing: border-box;
     text-align: center;
-    /* Optional: Center content inside each item */
-
+   
 }
 
 
@@ -123,7 +105,7 @@ h1 {
 .apacios_tekstas {
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
-    color: var(--body-text-color);
+    color: #4e4b66;
 
 }
 
@@ -133,15 +115,33 @@ h1 {
     gap: 20px;
 }
 
+.meniuske.active {
+    display: flex;
+    list-style: none;
+  }
+
+  .meniuske li a {
+    text-decoration: none;
+    color: #4e4b66;
+    font-size: 16px;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
+  }
+  
+  .meniuske li a:hover,
+  .meniuske li a.active {
+    color: #ff6a3e;
+    border-bottom: 2px solid #ff6a3e;
+  }
+
 .text_header {
-    font-size: var(--header-font-size);
+    font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
     font-weight: 900;
     line-height: 1.2em;
-    color: var(--header-color);
-    /* max-width: 43.75rem; */
-    width: 100%;
+    color: #1a1a1a;
+   
     margin: 0 0 1rem 0;
-    /* width: 50%; */
+   
     box-sizing: border-box;
 
 }
@@ -189,22 +189,22 @@ h1 {
 }
 
 .mygtukas {
-    border: 2px solid var(--primary);
+    border: 2px solid #ff6a3e;
     border-radius: 20px;
     padding: 10px 20px;
-    color: var(--primary);
+    color: #ff6a3e;
     text-decoration: none;
     font-size: 16px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .mygtukas a {
-    color: var(--primary);
+    color: #ff6a3e;
     text-decoration: none;
 }
 
 .mygtukas:hover {
-    background-color: var(--primary);
+    background-color: #ff6a3e;
     color: white;
     text-decoration: none;
 }
@@ -235,8 +235,8 @@ h1 {
     text-decoration: none;
     min-width: 9.375rem;
     padding: 0 clamp(2rem, 4vw, 3rem);
-    background-color: var(--primary);
-    color: var(--body-text-color-white);
+    background-color:#ff6a3e;
+    color: #fafbfc;
     display: inline-block;
     transition: color 0.3s, background-color 0.3s;
 
@@ -255,7 +255,7 @@ h1 {
 }
 
 #turinys {
-    padding: var(--section-padding);
+    padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     overflow: hidden;
     position: relative;
 }
@@ -269,19 +269,19 @@ h1 {
 @media (min-width: 1300px) {
     .flex-item {
         flex: 0 1 calc(25% - 20px);
-        /* For smaller screens, show two items per row */
+       
     }
 
     .flex-container {
         display: flex;
         flex-wrap: nowrap;
-        /* Prevents items from wrapping to the next line */
+       
         justify-content: space-between;
-        /* Optional: Add space between the items */
+        
         gap: 20px;
-        /* Optional: Add some gap between items */
+       
         overflow-x: auto;
-        /* Adds horizontal scroll if items don't fit in the row */
+        
     }
 
     .pavadinimas_tekstas {
@@ -346,19 +346,18 @@ h1 {
 
     .flex-item {
         flex: 0 1 calc(75% - 20px);
-        /* For smaller screens, show two items per row */
+        
     }
 
     .flex-container {
         display: flex;
         flex-wrap: nowrap;
-        /* Prevents items from wrapping to the next line */
+        
         justify-content: space-between;
-        /* Optional: Add space between the items */
-        gap: 20px;
-        /* Optional: Add some gap between items */
+        
+       
         overflow-x: auto;
-        /* Adds horizontal scroll if items don't fit in the row */
+        
     }
 }
 
@@ -370,29 +369,29 @@ h1 {
     .flex-container {
         display: flex;
         flex-direction: column;
-        /* Stack items vertically */
+        
         align-items: stretch;
-        /* Stretch each item to fill the container's width */
+       
         gap: 20px;
-        /* Optional: Add space between the items */
+      
     }
 
     .flex-item {
         display: flex;
         justify-content: center;
-        /* Horizontally center the content */
+       
         align-items: center;
-        /* Vertically center the content */
+        
         width: 100%;
-        /* Ensure each item takes up the full width of the container */
+        
         height: 200px;
-        /* Set a height for the item to center the content vertically */
+        
         box-sizing: border-box;
-        /* Ensure padding and borders are included in the width/height */
+       
         background-color: #f0f0f0;
-        /* Optional: Background for visibility */
+        
         padding: 20px;
-        /* Optional: Add padding inside the items */
+        
         flex-direction: column;
     }
 
@@ -427,18 +426,6 @@ h1 {
     }
 }
 
-
-
-/*modal*/
-
-
-/* Basic page styles */
-
-  
-/* Basic page styles */
-body {
-    font-family: Arial, sans-serif;
-  }
   
   .open-button {
     padding: 10px 20px;
@@ -450,50 +437,50 @@ body {
     cursor: pointer;
   }
   
-  /* Modal styles */
+ 
   .modal {
-    visibility: hidden; /* Hidden by default */
-    opacity: 0; /* Transparent by default */
+    visibility: hidden; 
+    opacity: 0; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-    display: flex; /* Flexbox for centering */
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    transition: visibility 0s, opacity 0.3s ease; /* Transition opacity */
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: visibility 0s, opacity 0.3s ease; 
   }
   
-  /* When modal is triggered (targeted) */
+ 
   #modal:target {
-    visibility: visible; /* Make modal visible */
-    opacity: 1;    /* Fade in */
+    visibility: visible; 
+    opacity: 1;    
   }
   
-  /* Modal content styles */
+  
   .modal-content {
     background-color: white;
     padding: 20px;
     width: 50%;
-    max-width: 500px; /* Limit the maximum width for better responsiveness */
+    max-width: 500px; 
     border-radius: 8px;
     position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transform: scale(0.7); /* Start small */
-    transition: transform 0.3s ease; /* Smooth scaling effect */
+    transform: scale(0.7);
+    transition: transform 0.3s ease; 
     opacity: 0;
-    transition: opacity 0.3s ease, transform 1s ease; /* Transition both */
+    transition: opacity 0.3s ease, transform 1s ease; 
   }
   
-  /* Expanding and fading in when modal is targeted */
+  
   #modal:target .modal-content {
-    transform: scale(1); /* Full size when modal is open */
-    opacity: 1; /* Fade in content */
+    transform: scale(1); 
+    opacity: 1; 
   }
   
-  /* Close button */
+
   .close-button {
     position: absolute;
     top: 10px;
